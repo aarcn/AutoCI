@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoCI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>AutoCI</h1>
+        <img src="https://scp-wiki.wdfiles.com/local--files/chaos-insurgency-hub/CI%20Main.png" alt="Logo" class="logo">
+        
+        <label for="memoryMatrix">Memory Matrix</label>
+        <input type="text" id="memoryMatrix" placeholder="A1 B2 C3, D4 E5 F6, G7 H8 I9">
+
+        <br>
+
+        <label for="overrideRoutines">Override Routines</label>
+        <input type="text" id="overrideRoutines" placeholder="A2 C4 F3, F4 H4 K6, G3 K6 J6">
+
+        <button id="solveButton">Solve</button>
+        
+        <h2>Memory Matrix</h2>
+        <div id="memoryMatrixDisplay" class="matrix-display"></div>
+
+        <h2>Override Routines</h2>
+        <div id="overrideRoutinesDisplay" class="routines-display"></div>
+    </div>
+
+    <div class="matrix-container">
+        <div id="linesContainer"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

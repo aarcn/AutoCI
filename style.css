@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #252f21;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    max-width: 50px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 16px);
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    display: block;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #284c14;
+    color: white;
+    cursor: pointer;
+    display: block;
+}
+
+button:hover {
+    background-color: #214111;
+}
+
+.matrix-display, .routines-display {
+    margin: 10px 0;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.path-highlight {
+    background-color: green;
+}
+
+.matrix-container {
+    position: relative;
+    z-index: 1;
+}
+
+#linesContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 2; 
+    pointer-events: none;
+}
+
+.line {
+    position: absolute;
+    background-color: red; 
+    height: 2px;
+    z-index: 3;
+}
